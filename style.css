@@ -34,6 +34,9 @@ text-decoration: none;
 h1 {
     color: beige;
 }
+.button {
+    background: #0f0f0f
+}
 .container {
     width: 100%;
     display: flex;
@@ -42,36 +45,40 @@ h1 {
     }
     
     .header {
-    background: rgba(160, 107, 240, 0.6);
+    background: rgba(91, 92, 151, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     }
-    .container2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .button {
-        margin-left: 635px;
-        padding: 15px 25px;
-        font-size: 24px;
-        text-align: center;
-        cursor: pointer;
-        outline: none;
-        color: #fff;
-        background-color: #222222;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 9px #999;
-      }
-      
-      .button:hover {background-color: #405b5f}
-      
-      .button:active {
-        background-color: #222222;
-        box-shadow: 0 5px rgb(43, 0, 0);
-        transform: translateY(4px);
-      }
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+background: url(images/grass.png) 50% 53px no-repeat; /* Фоновый рисунок травы */
+margin-top: -77px; /* Поднимаем вверх */
+overflow: auto; /* Отменяем схлопывающиеся отступы */
+position: relative; /* Относительное позиционирование */
+}
+.lion {
+position: absolute; /* Абсолютное позиционирование */
+left: 50%; /* По центру */
+margin-left: -347px; /* Сдвигаем влево */
+top: 3px; /* От верхнего края */
+}
+.footer-bg { 
+background: rgb(8, 8, 8); /* Цвет фона подвала */
+margin-top: 80px; /* Сдвигаем вниз */
+}
+.copyright {
+width: 740px; /* Ширина макета без полей */
+padding: 0 10px 10px; /* Поля */
+margin: auto; /* Выравнивание по центру */
+color: beige; /* Цвет текста */
+}
+.copyright p {
+margin: 0 0 5px 170px; /* Отступы текста */ 
+}
